@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ey0gppq8l6qb"
+path="res://.godot/imported/Overworld Theme - New Super Mario Bros.wav-c3817e5f5727f69640441c400ed35298.sample"
+
+[deps]
+
+source_file="res://Resources/Audio/Overworld Theme - New Super Mario Bros.wav"
+dest_files=["res://.godot/imported/Overworld Theme - New Super Mario Bros.wav-c3817e5f5727f69640441c400ed35298.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
