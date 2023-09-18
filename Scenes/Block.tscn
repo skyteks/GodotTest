@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmnwtjgpf7vou"]
+
+[ext_resource type="Texture2D" uid="uid://bk5jsn0et0dbo" path="res://Resources/Sprites/environment.png" id="1_hc5vi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5hbi"]
+size = Vector2(16, 16)
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hc5vi")
+region_enabled = true
+region_rect = Rect2(119, 408, 16, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o5hbi")

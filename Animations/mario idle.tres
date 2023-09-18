@@ -1,0 +1,33 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://da55dcrvppwc3"]
+
+[ext_resource type="Texture2D" uid="uid://c116jndplamr" path="res://Resources/Sprites/mario_normal.png" id="1_bk4yn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lapgb"]
+atlas = ExtResource("1_bk4yn")
+region = Rect2(8, 8, 32, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v167b"]
+atlas = ExtResource("1_bk4yn")
+region = Rect2(104, 140, 32, 50)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ncppe"]
+atlas = ExtResource("1_bk4yn")
+region = Rect2(56, 140, 32, 50)
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 10.0,
+"texture": SubResource("AtlasTexture_lapgb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v167b")
+}, {
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_ncppe")
+}],
+"loop": false,
+"name": &"idle",
+"speed": 5.0
+}]

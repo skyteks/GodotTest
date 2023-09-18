@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://bxhcaakoa8tsf"]
+
+[ext_resource type="SpriteFrames" uid="uid://da55dcrvppwc3" path="res://Animations/mario idle.tres" id="1_7d74w"]
+[ext_resource type="Script" path="res://Scenes/Mario.cs" id="1_c77ci"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u6xv8"]
+size = Vector2(16, 16)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_c77ci")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -7)
+scale = Vector2(1, 0.96)
+sprite_frames = ExtResource("1_7d74w")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_u6xv8")
